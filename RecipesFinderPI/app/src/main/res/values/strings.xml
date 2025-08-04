@@ -1,3 +1,146 @@
 <resources>
-    <string name="app_name">RecipesFinder-PI</string>
+    <string name="app_name">RecipesFinder</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_main_search">MainSearchActivity</string>
+    <string name="title_activity_add_recipe">AddRecipeActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_visualize_recipe">VisualizeRecipeActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="init_option">RecipesFinder</string>
+    <string name="add_product">Adicionar Produto</string>
+    <string name="search_product">Pesquisar Produto</string>
+    <string name="text_list_products">Configurações</string>
+    <string name="button_register">Registrar</string>
+    <string name="button_login">Login</string>
+    <string name="back_button">Retonar</string>food_image
+    <string name="food_image">Food Image</string>
+    <string name="select_food_type">Selecione o tipo de comida</string>
+    <string name="ex_name">Ex: Bolo de Cenoura</string>
+    <string name="ex_description">Ex: Bolo caseiro macio e saboroso, perfeito para o café da tarde.</string>
+    <string name="ex_Ingredient">Ex: Farinha de trigo</string>
+    <string name="ex_Quantity">Ex: 2 xícaras</string>
+    <string name="ex_Method">Ex:
+    1. Bata as cenouras, ovos e óleo no liquidificador.\n
+    2. Em uma tigela, misture a farinha, o açúcar e o fermento.\n
+    3. Acrescente a mistura do liquidificador e mexa até formar uma massa homogênea.\n
+    4. Leve ao forno pré-aquecido a 180°C por aproximadamente 40 minutos.</string>
+    <string name="ex_Calories">Ex: 500</string>
+    <string name="content_description_main">App icon</string>
+    <string name="content_description_search">Search icon</string>
+    <string name="content_description_add">Add icon</string>
+    <string name="content_description_settings">Search icon</string>
+    <string name="content_description_home">Home icon</string>
+    <string name="content_description_user">User icon</string>
+    <string name="login">Entrar</string>
+    <string name="register_recipe">Registrar Receita</string>
+    <string name="image_recipe">Imagem da Receita</string>
+    <string name="add_ingredient">Adicionar Ingrediente</string>
+    <string name="user_nickname">Nickname do Usuario</string>
+    <string name="ex_comment">ex: Muito Bom e facil de fazer!</string>
+    <string name="rating_box">Avaliação :</string>
+    <string name="rating_star">Estrela de Avaliação</string>
+    <string name="add_comment">Adcionar Comentario</string>
+    <string name="send_comment">Mandar</string>
+    <string name="select_user_image">Selecione sua Imagem de Perfil</string>
+    <string name="profile_image">Imagem de Pefil</string>
+    <string name="search_recipe">Pesquisar Receita</string>
+    <string name="filters">Filtros</string>
+    <string name="no_search_results">NENHUM RESULTADO ENCONTRADOn</string>
+    <string name="total_calories">Calorias Totais</string>
+    <string name="calories_text">Digite o Numero de Calorias</string>
+    <string name="food_types">Tipos de COmidas</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="profile">Perfil</string>
+    <string name="profile_nickname">NickName</string>
+    <string name="profile_firstname">Nome</string>
+    <string name="profile_lastname">Sobrenome</string>
+    <string name="profile_email">email@exemplo.com</string>
+    <string name="profile_recipes">Minhas Receitas</string>
+    <string name="profile_favorites">Receitas Favoritas</string>
+    <string name="profile_user_image">Imagem do Usuario</string>
+    <string name="log_out">Log Out</string>
+    <string name="search_ingredients">Pesquisar Ingredientes</string>
+    <string name="favorites_number">123</string>
+    <string name="favorites_icon">icone do favorito</string>
+    <string name="description">Descrição :</string>
+    <string name="show_ingredients">Ingredientes :</string>
+    <string name="method">Método de Preparo :</string>
+    <string name="comments">Cometarios</string>
+    <string name="add_comments">Add Cometario</string>
+    <string name="quantity">Qtd</string>
+    <string name="type_email">Digite seu Email</string>
+    <string name="type_password">Digite sua Senha</string>
+    <string name="register_phrase">Não possui cadastro? Clique aqui</string>
+    <string name="create_account">Crie sua Conta</string>
+    <string name="type_firstname">Digite seu Nome</string>
+    <string name="type_lastname">Digite seu Sobrenome</string>
+    <string name="type_nickname">Digite seu Nickname</string>
+    <string name="type_password2">Repita sua Senha</string>
+    <string name="login_phrase">Já esta Registrado? Entrar aqui!</string>
+    <string name="register">Cadastrar</string>Selecione o idioma
+    <string name="select_language">Selecione o idioma</string>
+    <string name="success_add">Sucesso ao Adicionar</string>
+    <string name="fail_add">Falha ao Adicionar</string>
+    <string name="constraint_add">Constraint ao Adicionar</string>
+    <string name="fail_URL">Falha ao obter URL: %1$s</string>
+    <string name="fail_upload">Upload falhou: %1$s</string>
+    <string name="empty_number_msg">Preencha todas as Informações</string>
+    <string name="empty_method_msg">Coloque o Metodo</string>
+    <string name="empty_description_msg">Coloque a Descrição</string>
+    <string name="empty_name_msg">Coloque o Nome</string>
+    <string name="atencion">Atenção</string>
+    <string name="galery_msg">Acesso a Galeria Necessário, Permitir?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="selected_type_add">Selecionado: %1$s</string>
+    <string name="selected_ingredient_add">Ingrediente %1$s adicionado</string>
+    <string name="type_ingredient">Digite um ingrediente</string>
+    <string name="no_image_selected">Nenhuma imagem selecionada.</string>
+    <string name="email_empty">Preencha seu email</string>
+    <string name="password_empty">Preencha sua senha</string>
+    <string name="login_error">Houve algum problema no login, tente novamente</string>
+    <string name="user_not_exits">Este usuário não existe</string>
+    <string name="password_error">O usuário existe mas a senha está incorreta</string>
+    <string name="navcontroller_notfound">NavController não encontrado</string>
+    <string name="search">Pesquisa</string>
+    <string name="visualize_recipe">Visualizar Receita</string>
+
+    <string name="no_internet">Falha ao conectar com a internet</string>
+    <string name="user_profile">Perfil do Usuario</string>
+    <string name="user_recipes">Minhas Receitas</string>
+    <string name="mismatch_password">Senha 1 não pode ser diferente da 2</string>
+    <string name="sucess_register">Cadastro realizado com sucesso</string>
+    <string name="fail_register">Houve algum problema no cadastro</string>
+    <string name="valid_email">Digite um email válido</string>
+    <string name="short_password">Digite uma senha com no mínimo 6 caracteres</string>
+    <string name="duplicate_email">Este e-mail já foi cadastrado</string>
+    <string name="register_error">Erro ao registrar usuário</string>
+    <string name="sucess_create">Criado com Sucesso</string>
+    <string name="fail_create">Falhou ao criar</string>
+    <string name="other">Sei la</string>
+    <string name="favorite_list">Lista de Favoritos</string>
+    <string name="list_not_found">Lista não Encontrada</string>
+    <string name="fail_search">Falha ao Buscar</string>
+    <string name="success_search">Sucesso ao Buscar</string>
+    <string name="selected_type_filter_add">Tipo %1$s adicionado</string>
+    <string name="log_out_msg">Tem Certeza que Deseja dar Log Out?</string>
+
+
+
+
 </resources>

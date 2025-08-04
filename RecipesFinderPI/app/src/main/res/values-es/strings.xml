@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RecipesFinder</string>
+    <string name="title_activity_settings">Actividad de Configuración</string>
+
+    <string name="messages_header">Mensajes</string>
+    <string name="sync_header">Sincronización</string>
+
+    <string name="signature_title">Tu firma</string>
+    <string name="reply_title">Acción de respuesta predeterminada</string>
+
+    <string name="sync_title">Sincronizar correo periódicamente</string>
+    <string name="attachment_title">Descargar adjuntos entrantes</string>
+    <string name="attachment_summary_on">Descargar automáticamente los adjuntos de los correos entrantes</string>
+    <string name="attachment_summary_off">Descargar adjuntos solo cuando se solicite manualmente</string>
+    <string name="title_activity_register">Actividad de Registro</string>
+    <string name="title_activity_main_search">Actividad de Búsqueda Principal</string>
+    <string name="title_activity_add_recipe">Actividad para Agregar Receta</string>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="title_activity_user_profile">Actividad de Perfil de Usuario</string>
+    <string name="title_activity_visualize_recipe">Actividad para Visualizar Receta</string>
+    <string name="title_activity_login">Actividad de Inicio de Sesión</string>
+
+    <string name="init_option">RecipesFinder</string>
+    <string name="add_product">Agregar Producto</string>
+    <string name="search_product">Buscar Producto</string>
+    <string name="text_list_products">Configuraciones</string>
+    <string name="button_register">Registrar</string>
+    <string name="button_login">Iniciar Sesión</string>
+    <string name="back_button">Volver</string>
+    <string name="food_image">Imagen de Comida</string>
+    <string name="select_food_type">Seleccione el tipo de comida</string>
+    <string name="ex_name">Ej: Pastel de Zanahoria</string>
+    <string name="ex_description">Ej: Pastel casero, suave y sabroso, perfecto para la merienda.</string>
+    <string name="ex_Ingredient">Ej: Harina de trigo</string>
+    <string name="ex_Quantity">Ej: 2 tazas</string>
+    <string name="ex_Method">Ej:
+1. Licúa las zanahorias, huevos y aceite.\n
+2. En un tazón, mezcla la harina, el azúcar y el polvo de hornear.\n
+3. Agrega la mezcla del licuador y revuelve hasta formar una masa homogénea.\n
+4. Hornea en un horno precalentado a 180°C durante aproximadamente 40 minutos.</string>
+    <string name="ex_Calories">Ej: 500</string>
+    <string name="content_description_main">Icono de la aplicación</string>
+    <string name="content_description_search">Icono de búsqueda</string>
+    <string name="content_description_add">Icono de agregar</string>
+    <string name="content_description_settings">Icono de configuraciones</string>
+    <string name="content_description_home">Icono de inicio</string>
+    <string name="content_description_user">Icono de usuario</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="register_recipe">Registrar Receta</string>
+    <string name="image_recipe">Imagen de la Receta</string>
+    <string name="add_ingredient">Agregar Ingrediente</string>
+    <string name="user_nickname">Apodo del Usuario</string>
+    <string name="ex_comment">Ej: ¡Muy bueno y fácil de hacer!</string>
+    <string name="rating_box">Calificación:</string>
+    <string name="rating_star">Estrella de calificación</string>
+    <string name="add_comment">Agregar comentario</string>
+    <string name="send_comment">Enviar</string>
+    <string name="select_user_image">Seleccione su imagen de perfil</string>
+    <string name="profile_image">Imagen de perfil</string>
+    <string name="search_recipe">Buscar Receta</string>
+    <string name="filters">Filtros</string>
+    <string name="no_search_results">NO SE ENCONTRARON RESULTADOS</string>
+    <string name="total_calories">Calorías Totales</string>
+    <string name="calories_text">Ingrese el número de calorías</string>
+    <string name="food_types">Tipos de Comida</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="profile">Perfil</string>
+    <string name="profile_nickname">Apodo</string>
+    <string name="profile_firstname">Nombre</string>
+    <string name="profile_lastname">Apellido</string>
+    <string name="profile_email">email@ejemplo.com</string>
+    <string name="profile_recipes">Mis Recetas</string>
+    <string name="profile_favorites">Recetas Favoritas</string>
+    <string name="profile_user_image">Imagen del Usuario</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="search_ingredients">Buscar ingredientes</string>
+    <string name="favorites_number">123</string>
+    <string name="favorites_icon">Icono de favorito</string>
+    <string name="description">Descripción:</string>
+    <string name="show_ingredients">Ingredientes:</string>
+    <string name="method">Método de preparación:</string>
+    <string name="comments">Comentarios</string>
+    <string name="add_comments">Agregar comentario</string>
+    <string name="quantity">Cantidad</string>
+    <string name="type_email">Ingrese su correo electrónico</string>
+    <string name="type_password">Ingrese su contraseña</string>
+    <string name="register_phrase">¿No tienes cuenta? Haz clic aquí</string>
+    <string name="create_account">Crea tu cuenta</string>
+    <string name="type_firstname">Ingrese su nombre</string>
+    <string name="type_lastname">Ingrese su apellido</string>
+    <string name="type_nickname">Ingrese su apodo</string>
+    <string name="type_password2">Repita su contraseña</string>
+    <string name="login_phrase">¿Ya estás registrado? Inicia sesión aquí!</string>
+    <string name="register">Registrar</string>
+    <string name="select_language">Seleccionar idioma</string>
+    <string name="success_add">Éxito al Añadir</string>
+    <string name="fail_add">Fallo al Añadir</string>
+    <string name="constraint_add">Restricción al Añadir</string>
+    <string name="fail_URL">Fallo al obtener URL: %1$s</string>
+    <string name="fail_upload">La carga falló: %1$s</string>
+    <string name="empty_number_msg">Complete toda la Información</string>
+    <string name="empty_method_msg">Ingrese el Método</string>
+    <string name="empty_description_msg">Ingrese la Descripción</string>
+    <string name="empty_name_msg">Ingrese el Nombre</string>
+    <string name="atencion">Atención</string>
+    <string name="galery_msg">Se requiere acceso a la Galería, ¿permitir?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="selected_type_add">Seleccionado: %1$s</string>
+    <string name="selected_ingredient_add">Ingrediente %1$s añadido</string>
+    <string name="type_ingredient">Ingrese un ingrediente</string>
+    <string name="no_image_selected">Ninguna imagen seleccionada.</string>
+    <string name="email_empty">Ingrese su correo electrónico</string>
+    <string name="password_empty">Ingrese su contraseña</string>
+    <string name="login_error">Hubo un problema al iniciar sesión, intente de nuevo</string>
+    <string name="user_not_exits">Este usuario no existe</string>
+    <string name="password_error">El usuario existe pero la contraseña es incorrecta</string>
+    <string name="navcontroller_notfound">NavController no encontrado</string>
+    <string name="search">Buscar</string>
+    <string name="visualize_recipe">Ver Receta</string>
+
+    <string name="no_internet">Error al conectarse a internet</string>
+    <string name="user_profile">Perfil del usuario</string>
+    <string name="user_recipes">Mis Recetas</string>
+    <string name="mismatch_password">La primera contraseña no puede ser diferente de la segunda</string>
+    <string name="sucess_register">Registro realizado con éxito</string>
+    <string name="fail_register">Hubo un problema en el registro</string>
+    <string name="valid_email">Ingrese un correo electrónico válido</string>
+    <string name="short_password">Ingrese una contraseña con al menos 6 caracteres</string>
+    <string name="duplicate_email">Este correo electrónico ya ha sido registrado</string>
+    <string name="register_error">Error al registrar usuario</string>
+    <string name="sucess_create">Creado con éxito</string>
+    <string name="fail_create">Fallo al crear</string>
+    <string name="other">No lo sé</string>
+    <string name="favorite_list">Lista de Favoritos</string>
+    <string name="list_not_found">Lista no encontrada</string>
+    <string name="fail_search">Error al buscar</string>
+    <string name="success_search">Búsqueda exitosa</string>
+    <string name="selected_type_filter_add">Tipo %1$s agregado</string>
+    <string name="log_out_msg">¿Está seguro de que desea cerrar sesión?</string>
+
+
+</resources>

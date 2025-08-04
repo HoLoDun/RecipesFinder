@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.view.fragments.VisualizeRecipeFragment">
+
+    <ScrollView
+        android:id="@+id/scrollViewRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@drawable/background_gradient"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Card com imagem do prato, nome e ícone de favorito -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_gradient"
+                    android:padding="8dp">
+
+                    <!-- Imagem do prato -->
+                    <ImageView
+                        android:id="@+id/imgPrato"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:contentDescription="@string/image_recipe"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/rounded_button"
+                        android:clipToOutline="true"
+                        android:src="@drawable/lanches"
+                        android:layout_alignParentTop="true" />
+
+                    <!-- Nome do prato -->
+                    <TextView
+                        android:id="@+id/tvNomePrato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgPrato"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/ex_name"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/app_blue" />
+
+                    <!-- Container para número e ícone de favorito -->
+                    <LinearLayout
+                        android:id="@+id/llFavoritos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgPrato"
+                        android:background="@drawable/image_background"
+                        android:padding="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvNumFavorito"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/favorites_number"
+                            android:textColor="@color/red"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/icFavorito"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/ic_favorite"
+                            android:contentDescription="@string/favorites_icon" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Descrição -->
+            <TextView
+                android:id="@+id/tvDescricaoTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_blue"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/ex_description"
+                android:textSize="14sp"
+                android:textColor="@color/app_blue"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Ingredientes -->
+            <TextView
+                android:id="@+id/tvIngredientesTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_ingredients"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_blue"
+                android:layout_marginBottom="4dp" />
+
+            <!-- RecyclerView para listar os ingredientes dinamicamente -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvIngredientes"
+                android:layout_width="match_parent"
+                android:layout_height="204dp"
+                android:nestedScrollingEnabled="true"
+                android:padding="10dp"
+                tools:listitem="@layout/ingredient_line" />
+
+            <!-- Método de Preparo -->
+            <TextView
+                android:id="@+id/tvMetodoPreparoTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/method"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_blue"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvMetodoPreparo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ex_Method"
+                android:textColor="@color/app_blue"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/btnComentarios"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/rounded_button_botton"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comments" />
+
+                <Button
+                    android:id="@+id/btnAddComentario"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_botton"
+                android:padding="10dp"
+                android:text="@string/add_comments"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

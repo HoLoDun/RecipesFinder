@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background_gradient"
+    tools:context=".ui.view.MainActivity">
+
+    <!-- Imagem principal -->
+    <ImageView
+        android:id="@+id/image_main"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/content_description_main"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_border"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Texto logo abaixo da imagem principal -->
+    <TextView
+        android:id="@+id/text_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/init_option"
+        android:textSize="28sp"
+        android:textColor="@color/app_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_main" />
+
+    <!-- Botões de ação: add, search e list -->
+    <ImageView
+        android:id="@+id/image_add"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/content_description_add"
+        android:src="@drawable/ic_add"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/text_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/image_search"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_search"
+        android:contentDescription="@string/content_description_search"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/image_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/image_list"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_list"
+        android:contentDescription="@string/content_description_settings"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/image_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+
+
+    <!-- Botão "Log Out" fixado na parte inferior, abaixo da seleção de idioma -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_button_botton"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_list"
+        android:layout_marginTop="30dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

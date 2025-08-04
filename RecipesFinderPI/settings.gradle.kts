@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RecipesFinder-PI"
+rootProject.name = "RecipesFinder"
 include(":app")

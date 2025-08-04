@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_mng_user"
+    app:startDestination="@id/userProfileFragment">
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <action
+        android:id="@+id/action_userProfileFragment_to_userRecipeListFragment"
+        app:destination="@id/userRecipeListFragment" />
+    <fragment
+        android:id="@+id/userRecipeListFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.UserRecipeListFragment"
+        android:label="UserRecipeListFragment" />
+    <action
+        android:id="@+id/action_userProfileFragment_to_favoriteListFragment"
+        app:destination="@id/favoriteListFragment" />
+    <fragment
+        android:id="@+id/favoriteListFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.FavoriteListFragment"
+        android:label="FavoriteListFragment" />
+
+    <action
+        android:id="@+id/action_userRecipeListFragment_to_visualizeRecipeFragment"
+        app:destination="@id/visualizeRecipeFragment" />
+    <action
+        android:id="@+id/action_favoriteListFragment_to_visualizeRecipeFragment"
+        app:destination="@id/visualizeRecipeFragment" />
+
+    <fragment
+        android:id="@+id/visualizeRecipeFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.VisualizeRecipeFragment"
+        android:label="fragment_visualize_recipe"
+        tools:layout="@layout/fragment_visualize_recipe" />
+    <action
+        android:id="@+id/action_visualizeRecipeFragment_to_addCommentFragment"
+        app:destination="@id/addCommentFragment" />
+    <fragment
+        android:id="@+id/addCommentFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.AddCommentFragment"
+        android:label="fragment_add_comment"
+        tools:layout="@layout/fragment_add_comment" >
+        <argument
+            android:name="recipeId"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_visualizeRecipeFragment_to_commentListFragment"
+        app:destination="@id/commentListFragment" />
+    <fragment
+        android:id="@+id/commentListFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.CommentListFragment"
+        android:label="fragment_comment_list"
+        tools:layout="@layout/fragment_comment_list" >
+        <argument
+            android:name="IdRef"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_userProfileFragment_to_changeProfilePictureFragment"
+        app:destination="@id/changeProfilePictureFragment" />
+    <fragment
+        android:id="@+id/changeProfilePictureFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.ChangeProfilePictureFragment"
+        android:label="fragment_change_profile_picture"
+        tools:layout="@layout/fragment_change_profile_picture" />
+</navigation>

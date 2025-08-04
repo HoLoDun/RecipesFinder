@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="30dp"
+    tools:context=".ui.view.RegisterActivity">
+
+    <!-- Cabeçalho com imagem e título -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white"
+            android:contentDescription="@string/back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/register"
+            android:textColor="@color/app_blue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/image_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/line_white"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"/>
+
+    <TextView
+        android:id="@+id/text_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/app_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout" />
+
+    <!-- EditText para nome -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:hint="@string/type_firstname"
+        android:inputType="textCapSentences"
+        android:padding="7dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_top" />
+
+    <!-- EditText para sobrenome -->
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:hint="@string/type_lastname"
+        android:inputType="textCapSentences"
+        android:padding="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextName" />
+
+    <!-- EditText para NickName -->
+    <EditText
+        android:id="@+id/editTextNickName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:hint="@string/type_nickname"
+        android:inputType="textCapSentences"
+        android:padding="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLastName" />
+
+    <!-- EditText para e-mail -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:hint="@string/type_email"
+        android:padding="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNickName" />
+
+    <!-- EditText para senha -->
+    <EditText
+        android:id="@+id/editTextPasswd1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:inputType="textPassword"
+        android:hint="@string/type_password"
+        android:padding="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
+
+    <!-- EditText para repetir senha -->
+    <EditText
+        android:id="@+id/editTextPasswd2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:hint="@string/type_password2"
+        android:padding="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPasswd1" />
+
+    <!-- Botão para cadastrar -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:background="@drawable/rounded_button_botton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPasswd2"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_phrase"
+        android:textSize="15sp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/app_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

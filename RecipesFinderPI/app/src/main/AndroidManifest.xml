@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,13 +19,41 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RecipesFinderPI"
+        android:theme="@style/Theme.RecipesFinder"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.view.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.RecipesFinder" />
+        <activity
+            android:name=".ui.view.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".ui.view.MainUserActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/Theme.RecipesFinder" />
+        <activity
+            android:name=".ui.view.AddRecipeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_add_recipe"
+            android:theme="@style/Theme.RecipesFinder" />
+        <activity
+            android:name=".ui.view.MainSearchActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_search"
+            android:theme="@style/Theme.RecipesFinder" />
+        <activity
+            android:name=".ui.view.RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.RecipesFinder" />
+        <activity
+            android:name=".ui.view.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.RecipesFinderPI">
+            android:theme="@style/Theme.RecipesFinder">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

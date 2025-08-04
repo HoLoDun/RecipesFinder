@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="16dp"
+    android:background="@drawable/background_gradient"
+    app:cardElevation="10dp"
+    tools:context=".ui.view.viewholder.FoodTypeViewHolder">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:padding="10dp">
+
+        <!-- Image of the food type -->
+        <ImageView
+            android:id="@+id/imageFoodType"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/lanches"
+            android:background="@drawable/rounded_button"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/food_image" />
+
+        <!-- Name of the food type -->
+        <TextView
+            android:id="@+id/textFoodType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="@string/food_image"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

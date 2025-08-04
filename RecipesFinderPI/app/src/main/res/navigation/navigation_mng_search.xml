@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_mng"
+    app:startDestination="@id/primarySearchFragment">
+
+    <fragment
+        android:id="@+id/primarySearchFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.PrimarySearchFragment"
+        android:label="fragment_primary_search"
+        tools:layout="@layout/fragment_primary_search" />
+    <action
+        android:id="@+id/action_primarySearchFragment_to_secondarySearchFragment"
+        app:destination="@id/secondarySearchFragment" />
+    <fragment
+        android:id="@+id/secondarySearchFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.SecondarySearchFragment"
+        android:label="fragment_secondary_search"
+        tools:layout="@layout/fragment_secondary_search">
+
+        <argument
+            android:name="foodTypeName"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_primarySearchFragment_to_terciarySearchFragment"
+        app:destination="@id/terciarySearchFragment" />
+    <action
+        android:id="@+id/action_secondarySearchFragment_to_terciarySearchFragment"
+        app:destination="@id/terciarySearchFragment" />
+    <fragment
+        android:id="@+id/terciarySearchFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.TerciarySearchFragment"
+        android:label="fragment_terciary_search"
+        tools:layout="@layout/fragment_terciary_search">
+
+    </fragment>
+
+
+    <action
+        android:id="@+id/action_primarySearchFragment_to_searchFilterFragment"
+        app:destination="@id/searchFilterFragment" />
+    <fragment
+        android:id="@+id/searchFilterFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.SearchFilterFragment"
+        android:label="SearchFilterFragment" />
+    <action
+        android:id="@+id/action_searchFilterFragment_to_terciarySearchFragment"
+        app:destination="@id/terciarySearchFragment" />
+    <action
+        android:id="@+id/action_secondarySearchFragment_to_visualizeRecipeFragment"
+        app:destination="@id/visualizeRecipeFragment" />
+    <action
+        android:id="@+id/action_terciarySearchFragment_to_visualizeRecipeFragment"
+        app:destination="@id/visualizeRecipeFragment" />
+
+    <fragment
+        android:id="@+id/visualizeRecipeFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.VisualizeRecipeFragment"
+        android:label="fragment_visualize_recipe"
+        tools:layout="@layout/fragment_visualize_recipe" />
+    <action
+        android:id="@+id/action_visualizeRecipeFragment_to_addCommentFragment"
+        app:destination="@id/addCommentFragment" />
+    <fragment
+        android:id="@+id/addCommentFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.AddCommentFragment"
+        android:label="fragment_add_comment"
+        tools:layout="@layout/fragment_add_comment" >
+        <argument
+            android:name="recipeId"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_visualizeRecipeFragment_to_commentListFragment"
+        app:destination="@id/commentListFragment" />
+    <fragment
+        android:id="@+id/commentListFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.CommentListFragment"
+        android:label="fragment_comment_list"
+        tools:layout="@layout/fragment_comment_list" >
+        <argument
+            android:name="IdRef"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_primarySearchFragment_to_noResultsFragment"
+        app:destination="@id/noResultsFragment" />
+    <action
+        android:id="@+id/action_secondarySearchFragment_to_noResultsFragment"
+        app:destination="@id/noResultsFragment" />
+    <action
+        android:id="@+id/action_terciaryRecipeFragment_to_noResultsFragment"
+        app:destination="@id/noResultsFragment" />
+    <fragment
+        android:id="@+id/noResultsFragment"
+        android:name="com.example.recipesfinder.ui.view.fragments.NoResultsFragment"
+        android:label="NoResultsFragment" />
+
+</navigation>

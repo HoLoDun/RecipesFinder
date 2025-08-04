@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_comment"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spinner para Rating -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_background"
+        android:padding="16dp">
+
+        <!-- Texto Avaliação -->
+        <TextView
+            android:id="@+id/tvAvaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rating_box"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- 5 Imagens de estrelas vazias -->
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="@string/rating_star" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="@string/rating_star" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="@string/rating_star" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="@string/rating_star" />
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_empty"
+            android:contentDescription="@string/rating_star" />
+
+    </LinearLayout>
+
+    <!-- Campo para Comentário -->
+    <EditText
+        android:id="@+id/etComentario"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="text"
+        android:gravity="top"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/ex_comment"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:inputType="textMultiLine" />
+
+    <!-- Botão Mandar -->
+    <Button
+        android:id="@+id/btnMandar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_comment"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button_botton"
+        android:layout_gravity="center"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Espaço flexível para empurrar a barra inferior para baixo -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+
+</LinearLayout>

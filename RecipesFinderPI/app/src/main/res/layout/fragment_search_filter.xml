@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/appIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher"
+                android:background="@drawable/circle_border"
+                android:contentDescription="@string/content_description_main"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@drawable/edittext_background">
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="text"
+                    android:hint="@string/search_recipe"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textCapSentences" />
+
+                <ImageButton
+                    android:id="@+id/btnSearch"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:contentDescription="@string/content_description_search"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:tint="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Botão para aplicar filtros -->
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button_botton"
+            android:text="@string/filters" />
+
+        <!-- Seção: Calorias Totais -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_blue"
+            android:text="@string/total_calories"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/calories_text"
+            android:inputType="number" />
+
+        <!-- Espaço -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Seção: Tipos de Comida -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_blue"
+            android:text="@string/food_types"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/edittext_background"
+            tools:listitem="@layout/type_recipe_filter_line" />
+
+        <!-- Espaço -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <!-- Seção: Ingredientes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_blue"
+            android:text="@string/ingredients"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@drawable/edittext_background">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvIngredients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:completionThreshold="1"
+                android:hint="@string/search_ingredients"
+                android:inputType="text" />
+
+            <ImageButton
+                android:id="@+id/btnAddIngredient"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="@color/black"
+                android:contentDescription="@string/content_description_add"
+                android:src="@android:drawable/ic_menu_add" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
